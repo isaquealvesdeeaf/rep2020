@@ -16,3 +16,14 @@ A função do package.json é gerenciar as informaçoes de script e dependencia 
 >> Comando: npm install -s live-server
 
 o live server sera usado para usar a porta 3000 
+
+
+## salvar o arquivo
+
+Comando: git add .
+    git status
+    git commit -m "seu comentario"
+
+    git status
+
+    git push
