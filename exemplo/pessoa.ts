@@ -1,5 +1,5 @@
 namespace empresa{
-    class pessoa{
+    export  class pessoa{
 
         //informações da classe
 

@@ -1,0 +1,5 @@
+namespace empresa{
+    class cliente{
+        
+    }
+}
