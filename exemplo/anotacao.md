@@ -20,8 +20,11 @@ o live server sera usado para usar a porta 3000
 
 ## salvar o arquivo
 
-Comando: git add .
-    git status
+Comando:
+    git status 
+    
+     git add .
+    
     git commit -m "seu comentario"
 
     git status
