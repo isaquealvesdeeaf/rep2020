@@ -3,8 +3,8 @@ namespace empresa{
 
         //informações da classe
 
-        private nome:String|undefined;
-        private cpf:String;
+        private nome:string|undefined;
+        private cpf:string;
         private idade:number|undefined;
 
         constructor(nome:string, cpf:string){
@@ -12,17 +12,17 @@ namespace empresa{
             this.nome = nome;
         }
 
-        getCpf():string{
+        getCpf(): string{
             return this.cpf;
         }
 
         //pega o valor
         
-         getNome():String|undefined{
+         getNome():string|undefined{
             return this.nome;
         }
         //altera o valor
-        setNome(nome:String):void{
+        setNome(nome:string):void{
             this.nome = nome;
         }
         getidade():number|undefined{
