@@ -3,4 +3,6 @@ namespace empresa{
         p.setidade(15);
 
         document.getElementById("nome").textContent = p.getNome();
+        document.getElementById("cpf").textContent = p.getCpf();
+        document.getElementById("idade").textContent = p.getIdade().Tostring();
 }
