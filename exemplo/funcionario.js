@@ -25,9 +25,16 @@ var empresa;
         funcionario.prototype.setCodFuncionario = function (cod) {
             this.codFuncionario = cod;
         };
-        funcionario.prototype.getCodValorDia = function () {
+        funcionario.prototype.getValorDia = function () {
             return this.codFuncionario;
+        };
+        funcionario.prototype.setValorDia = function (valor) {
+            this.valorDia = valor;
+        };
+        funcionario.prototype.calcularSalario = function () {
+            return (this.valorDia * 30) + (this.getValorDia() * 0.3);
         };
         return funcionario;
     }(empresa.pessoa));
+    empresa.funcionario = funcionario;
 })(empresa || (empresa = {}));
