@@ -25,7 +25,7 @@ namespace empresa{
         setNome(nome:string):void{
             this.nome = nome;
         }
-        getidade():number|undefined{
+        getIdade():number|undefined{
             return this.idade;
         }
         //altera o valor

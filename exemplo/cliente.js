@@ -14,29 +14,33 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var empresa;
 (function (empresa) {
-    var cliente = /** @class */ (function (_super) {
-        __extends(cliente, _super);
-        function cliente() {
-            return _super !== null && _super.apply(this, arguments) || this;
+    var Cliente = /** @class */ (function (_super) {
+        __extends(Cliente, _super);
+        // private idade: number|undefined;
+        function Cliente(nome, cpf, cod) {
+            var _this = _super.call(this, nome, cpf) || this;
+            _this.codCliente = cod;
+            return _this;
         }
-        cliente.prototype.getSaldo = function () {
+        Cliente.prototype.getSaldo = function () {
             return this.saldo;
         };
-        cliente.prototype.setSaldo = function (saldo) {
+        Cliente.prototype.setSaldo = function (saldo) {
             this.saldo = saldo;
         };
-        cliente.prototype.getLimite = function () {
+        Cliente.prototype.getLimite = function () {
             return this.limite;
         };
-        cliente.prototype.setLimite = function (saldo) {
+        Cliente.prototype.setLimite = function (saldo) {
             this.limite = this.limite;
         };
-        cliente.prototype.getCodCliente = function () {
+        Cliente.prototype.getCodCliente = function () {
             return this.codCliente;
         };
-        cliente.prototype.setCodCliente = function (CodCliente) {
+        Cliente.prototype.setCodCliente = function (CodCliente) {
             this.codCliente = CodCliente;
         };
-        return cliente;
+        return Cliente;
     }(empresa.pessoa));
+    empresa.Cliente = Cliente;
 })(empresa || (empresa = {}));

@@ -1,8 +1,14 @@
 namespace empresa{
-    class cliente extends pessoa{
+    export class Cliente extends pessoa{
         private saldo: number|undefined;
         private limite: number|undefined;
         private codCliente: number|undefined;
+       // private idade: number|undefined;
+
+        constructor(nome:string, cpf:string, cod:number){
+                super(nome,cpf);
+                this.codCliente = cod;
+        }
 
         getSaldo():number|undefined{
             return this.saldo;
@@ -26,7 +32,8 @@ namespace empresa{
 
         setCodCliente(CodCliente:number):void{
             this.codCliente = CodCliente;
+
         }
-               
+    
     }
 }

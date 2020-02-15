@@ -17,7 +17,7 @@ var empresa;
         pessoa.prototype.setNome = function (nome) {
             this.nome = nome;
         };
-        pessoa.prototype.getidade = function () {
+        pessoa.prototype.getIdade = function () {
             return this.idade;
         };
         //altera o valor
